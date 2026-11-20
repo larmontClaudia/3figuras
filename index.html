@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+</head>
+<body style="margin: 0px; overflow: hidden;">
+  <a-scene embedded arjs>
+
+    <a-marker preset="hiro">
+      <!-- Figura 1: Caja -->
+      <a-box position="-0.6 0.25 0" width="0.5" height="0.5" depth="0.5" color="#4CC3D9"></a-box>
+      <!-- Figura 2: Esfera -->
+      <a-sphere position="0 0.35 0" radius="0.35" color="#EF2D5E"></a-sphere>
+      <!-- Figura 3: Cilindro -->
+      <a-cylinder position="0.6 0.3 0" radius="0.25" height="0.6" color="#FFC65D"></a-cylinder>
+    </a-marker>
+
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+</html>
